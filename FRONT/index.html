@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPB-CIENTIFICA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>UPB-CIENTIFICA</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Streaming</a></li>
+                <li><a href="#">Archivos</a></li>
+                <li><a href="#">Imágenes</a></li>
+                <li><a href="#">Configuración</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <button>Inicio</button>
+            <button>Videos</button>
+            <button>Archivos</button>
+            <button>Imágenes</button>
+        </header>
+
+        <section class="streaming">
+            <h2>Streaming</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-placeholder">Video</div>
+                    <p>Título<br>Descripción del video</p>
+                </div>
+                <div class="video-item">
+                    <div class="video-placeholder">Video</div>
+                    <p>Título<br>Descripción del video</p>
+                </div>
+                <div class="video-item">
+                    <div class="video-placeholder">Video</div>
+                    <p>Título<br>Descripción del video</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="file-management">
+            <h2>Gestión de Archivos</h2>
+            <input type="text" placeholder="Buscar archivo...">
+            <div class="file-grid">
+                <div class="file-item">Nombre.pdf</div>
+                <div class="file-item">Nombre.docx</div>
+                <div class="file-item">Nombre.pptx</div>
+                <div class="file-item">Nombre.xlsm</div>
+            </div>
+            <form id="file-upload-form" enctype="multipart/form-data">
+                <input type="file" id="file-upload" multiple>
+                <button type="submit">Subir Archivo</button>
+            </form>
+        </section>
+
+        <section class="image-management">
+            <h2>Gestión de imágenes</h2>
+            <input type="text" placeholder="Buscar imágenes...">
+            <div class="image-grid">
+                <div class="image-item">Nombre.jpg</div>
+                <div class="image-item">Nombre.png</div>
+            </div>
+            <form id="image-upload-form" enctype="multipart/form-data">
+                <input type="file" id="image-upload" accept="image/*" multiple>
+                <button type="submit">Subir Imágen</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
